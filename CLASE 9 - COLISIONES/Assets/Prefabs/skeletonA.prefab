@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 553506560082709396}
   - component: {fileID: 7557341825347264460}
+  - component: {fileID: 7629435159531372904}
+  - component: {fileID: 7709644739895793672}
   m_Layer: 0
   m_Name: skeletonA
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,8 +51,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19c9d062c7ad4b429e58edb44ed419c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedEnemy: 5
+  speedEnemy: 3
   liveEnemy: 3
+--- !u!65 &7629435159531372904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929329098778759470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 0.7, z: 0.4}
+  m_Center: {x: 0, y: 0.4, z: 0}
+--- !u!54 &7709644739895793672
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929329098778759470}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 0
 --- !u!1 &4411952929301612477
 GameObject:
   m_ObjectHideFlags: 0

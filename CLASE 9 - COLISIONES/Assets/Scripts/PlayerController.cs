@@ -38,4 +38,14 @@ public class PlayerController : MonoBehaviour
         Quaternion angulo   = Quaternion.Euler(0, cameraAxisX, 0);
         transform.localRotation = angulo;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
+        
+    }
 }
